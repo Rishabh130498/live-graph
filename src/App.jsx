@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const socket = io(`wss://${location.host}` {
+const socket = io(`wss://${location.host}`, {
   transports: ['websocket', 'polling']
 });
 
