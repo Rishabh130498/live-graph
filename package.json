@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run start:client & npm run start:server",
     "start:client": "parcel src/index.html",
-    "start:server": "nodemon src/server.js"
+    "start:server": "nodemon src/server.js",
+    "build": "parcel build --output dist"
   },
   "keywords": [],
   "author": "",
