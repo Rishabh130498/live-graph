@@ -30,7 +30,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const socket = io.connect({transports: ['websocket', 'polling']});
+const socket = io(`wss://${location.host}` {
+  transports: ['websocket', 'polling']
+});
 
 const App = ({}) => {
   // const [data, setData] = useState([]);
